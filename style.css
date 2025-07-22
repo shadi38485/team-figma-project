@@ -259,11 +259,16 @@ body {
 }
 
 img.banner {
-  width: 100%;
+  width: 75%;
+  height: 30vw;
+  display: flex;
+  margin: 0 auto;
 }
 
 .banner-conainer {
   position: relative;
+  background-color: #c2c3c1;
+  margin-bottom: 30px;
 }
 
 .banner-text {
@@ -275,8 +280,7 @@ img.banner {
   text-align: center;
   color: #1a2456;
   font-weight: 800;
-
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   letter-spacing: 5px;
   text-transform: uppercase;
   margin: 0;
