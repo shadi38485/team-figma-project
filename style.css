@@ -11,7 +11,6 @@ body {
   font-family: prompt, sans-serif;
   color: rgb(222, 205, 205);
   margin: 0;
-  /* padding: 2rem; */
   background-color: #f0efed;
 }
 
@@ -331,7 +330,7 @@ img.banner {
 }
 
 .footer {
-  background: #1a2456; /* آبی روشن‌تر */
+  background: #1a2456;
   color: #efc2b3;
   padding: 3rem 2rem;
   font-family: sans-serif;
@@ -558,7 +557,6 @@ img.banner {
   }
 }
 
-/* موبایل: خیلی جمع‌وجور */
 @media (max-width: 480px) {
   .navbar {
     padding: 0.3rem 0.8rem;
@@ -583,7 +581,6 @@ img.banner {
   display: none;
 }
 
-/* مخفی کردن منو در حالت موبایل */
 .nav-links {
   display: flex;
   gap: 2rem;
@@ -595,14 +592,13 @@ img.banner {
     flex-direction: column;
     background-color: #1a2456;
     position: absolute;
-    top: 60px; /* بسته به ارتفاع navbar */
+    top: 60px;
     left: 0;
     width: 100%;
     padding: 1rem;
     z-index: 9;
   }
 
-  /* وقتی checkbox تیک خورده */
   #menu-toggle:checked + .menu-icon + .nav-links {
     display: flex;
   }
