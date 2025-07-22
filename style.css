@@ -7,10 +7,12 @@ html {
   scroll-behavior: smooth;
 }
 
+
 body {
   font-family: prompt, sans-serif;
   color: rgb(222, 205, 205);
   margin: 0;
+  /* padding: 2rem; */
   background-color: #f0efed;
 }
 
@@ -145,7 +147,6 @@ body {
   height: 100vh;
   position: relative;
   padding-top: 100px;
-  margin-bottom: 45px;
 }
 .container {
   display: flex;
@@ -262,16 +263,11 @@ body {
 }
 
 img.banner {
-  width: 75%;
-  height: 30vw;
-  display: flex;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .banner-conainer {
   position: relative;
-  background-color: #c2c3c1;
-  margin-bottom: 30px;
 }
 
 .banner-text {
@@ -283,7 +279,8 @@ img.banner {
   text-align: center;
   color: #1a2456;
   font-weight: 800;
-  font-size: 1.1rem;
+
+  font-size: 1.2rem;
   letter-spacing: 5px;
   text-transform: uppercase;
   margin: 0;
@@ -319,6 +316,15 @@ img.banner {
   right: 0;
   font-size: 0.85rem;
 }
+.card-body {
+  position: relative;
+  padding-top: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 
 .card-body:hover .status-price {
   opacity: 0;
@@ -330,8 +336,8 @@ img.banner {
 }
 
 .footer {
-  background: #1a2456;
-  color: #efc2b3;
+  background: linear-gradient(to right, #2c355c, #36406b); 
+  color: rgb(240, 213, 218);
   padding: 3rem 2rem;
   font-family: sans-serif;
   font-size: 0.4rem;
@@ -354,14 +360,14 @@ img.banner {
 .footer-column h4 {
   font-size: 0.7rem;
   margin-bottom: 1rem;
-  color: #efc2b3;
+  color: rgb(240, 198, 205);
 }
 
 .footer-column p,
 .footer-column ul {
   font-size: 0.8rem;
   line-height: 1.6;
-  color: #efc2b3;
+  color: rgb(235, 174, 184);
 }
 
 .footer-column ul {
@@ -375,7 +381,7 @@ img.banner {
 
 .footer-column ul li a {
   text-decoration: none;
-  color: #efc2b3;
+  color: rgb(240, 198, 205);
   transition: color 0.2s ease;
 }
 .footer-column ul li a:hover {
@@ -391,12 +397,12 @@ img.banner {
 .footer-subscribe h4 {
   font-size: 0.8rem;
   margin-bottom: 0.8rem;
-  color: #efc2b3;
+  color: rgb(240, 198, 205);
 }
 
 .footer-subscribe p {
-  font-size: 0.8rem;
-  color: #efc2b3;
+  font-size: 0.9rem;
+  color: rgb(240, 198, 205);
   margin-bottom: 0.8rem;
 }
 
@@ -408,11 +414,11 @@ img.banner {
 .footer-subscribe input[type="email"] {
   flex: 1;
   padding: 0.4rem 1.3rem;
-  border: 1px solid #efc2b3;
+  border: 1px solid rgb(240, 198, 205);
 
   outline: none;
   font-size: 0.7rem;
-  background-color: #1a2456;
+  background-color: #36406b;
   height: 30px;
   color: rgb(254, 254, 254);
   padding-left: 0.5rem;
@@ -449,7 +455,7 @@ img.banner {
 }
 
 .footer-social a {
-  background-color: #efc2b3;
+  background-color: rgb(240, 198, 205);
   border-radius: 50%;
   width: 28px;
   height: 28px;
@@ -467,23 +473,18 @@ img.banner {
   width: 18px;
   height: 18px;
   filter: brightness(0) saturate(100%) invert(10%) sepia(20%) saturate(250%)
-    hue-rotate(270deg);
+    hue-rotate(270deg); 
 }
 
 .copyright {
   font-size: 0.75rem;
-  color: #efc2b3;
+  color: rgb(240, 198, 205);
 }
+
 
 @media (max-width: 1024px) {
   .card {
-    width: 45%;
-    flex-wrap: wrap;
-  }
-
-  .card-below {
-    width: 45%;
-    flex-wrap: wrap;
+    width: 48%;
   }
 }
 
@@ -510,11 +511,6 @@ img.banner {
 
   .card {
     width: 100%;
-  }
-
-  .card-below {
-    width: 100%;
-    flex-wrap: wrap;
   }
 
   .footer-container {
@@ -556,6 +552,7 @@ img.banner {
   }
 }
 
+
 @media (max-width: 480px) {
   .navbar {
     padding: 0.3rem 0.8rem;
@@ -580,6 +577,8 @@ img.banner {
   display: none;
 }
 
+
+
 .nav-links {
   display: flex;
   gap: 2rem;
@@ -591,12 +590,13 @@ img.banner {
     flex-direction: column;
     background-color: #1a2456;
     position: absolute;
-    top: 60px;
+    top: 60px; 
     left: 0;
     width: 100%;
     padding: 1rem;
     z-index: 9;
   }
+
 
   #menu-toggle:checked + .menu-icon + .nav-links {
     display: flex;
@@ -655,5 +655,60 @@ img.banner {
 
   .banner-subtext {
     font-size: 1.1rem;
+  }
+}
+@media (max-width: 768px) {
+  .card-image img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .footer-container {
+    padding: 0 1rem;
+  }
+
+  .hero-content {
+    padding: 0 1rem;
+  }
+
+  .card-body .desc {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-image img {
+    height: 150px;
+  }
+
+  .banner-text h1 {
+    font-size: 0.9rem;
+    line-height: 1.2;
+  }
+
+  .banner-subtext {
+    font-size: 0.7rem;
+  }
+
+  .footer-column p,
+  .footer-column ul,
+  .footer-subscribe p {
+    font-size: 0.7rem;
+  }
+
+  .navbar {
+    padding: 0.3rem 0.5rem;
+  }
+
+  .nav-links {
+    padding: 0.5rem;
+  }
+
+  .hero-content {
+    padding: 0 0.5rem;
   }
 }
