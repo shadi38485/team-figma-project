@@ -8,18 +8,45 @@ body {
   font-family: prompt, sans-serif;
   color: rgb(222, 205, 205);
   margin: 0;
-  padding: 2rem;
+  /* padding: 2rem; */
   background-color: #f0efed;
 }
 
 .hero {
   background-image: url("./shop_cta_xl_896f6b8270.webp");
 
-  background-size: cover;
+  background-size: contain;
   background-position: center;
-  height: 100vh;
+  height: 110vh;
+  width: 100%;
   position: relative;
 }
+
+.scroll-down {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  animation: bounce 2s infinite;
+}
+
+.scroll-down span:hover {
+  color: #ccc;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(10px);
+  }
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -34,6 +61,7 @@ body {
   position: relative;
   z-index: 2;
 }
+
 
 .navbar {
   position: fixed;
