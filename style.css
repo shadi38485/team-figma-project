@@ -615,3 +615,36 @@ img.banner {
     align-items: center;
   }
 }
+
+@media (max-width: 768px) {
+  .banner-text h1 {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+
+  .banner-subtext {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .banner-text h1 {
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+  }
+
+  .banner-subtext {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .banner-text h1 {
+    font-size: 1.8rem;
+    letter-spacing: 5px;
+  }
+
+  .banner-subtext {
+    font-size: 1.1rem;
+  }
+}
