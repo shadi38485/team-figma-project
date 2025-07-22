@@ -362,7 +362,7 @@ img.banner {
 .footer-column ul {
   font-size: 0.8rem;
   line-height: 1.6;
-  color: rgb(235, 174, 184);
+  color: #efc2b3;
 }
 
 .footer-column ul {
@@ -376,7 +376,7 @@ img.banner {
 
 .footer-column ul li a {
   text-decoration: none;
-  color: rgb(240, 198, 205);
+  color: #efc2b3;
   transition: color 0.2s ease;
 }
 .footer-column ul li a:hover {
@@ -392,12 +392,12 @@ img.banner {
 .footer-subscribe h4 {
   font-size: 0.8rem;
   margin-bottom: 0.8rem;
-  color: rgb(240, 198, 205);
+  color: #efc2b3;
 }
 
 .footer-subscribe p {
-  font-size: 0.9rem;
-  color: rgb(240, 198, 205);
+  font-size: 0.8rem;
+  color: #efc2b3;
   margin-bottom: 0.8rem;
 }
 
@@ -409,11 +409,11 @@ img.banner {
 .footer-subscribe input[type="email"] {
   flex: 1;
   padding: 0.4rem 1.3rem;
-  border: 1px solid rgb(240, 198, 205);
+  border: 1px solid #efc2b3;
 
   outline: none;
   font-size: 0.7rem;
-  background-color: #36406b;
+  background-color: #1a2456;
   height: 30px;
   color: rgb(254, 254, 254);
   padding-left: 0.5rem;
@@ -450,7 +450,7 @@ img.banner {
 }
 
 .footer-social a {
-  background-color: rgb(240, 198, 205);
+  background-color: #efc2b3;
   border-radius: 50%;
   width: 28px;
   height: 28px;
@@ -473,7 +473,7 @@ img.banner {
 
 .copyright {
   font-size: 0.75rem;
-  color: rgb(240, 198, 205);
+  color: #efc2b3;
 }
 
 /* ✅ RESPONSIVE STYLES */
