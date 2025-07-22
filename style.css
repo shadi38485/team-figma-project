@@ -327,7 +327,7 @@ img.banner {
 }
 
 .footer {
-  background: linear-gradient(to right, #2c355c, #36406b); /* آبی روشن‌تر */
+  background: linear-gradient(to right, #2c355c, #36406b); 
   color: rgb(240, 213, 218);
   padding: 3rem 2rem;
   font-family: sans-serif;
@@ -472,7 +472,7 @@ img.banner {
   color: rgb(240, 198, 205);
 }
 
-/* ✅ RESPONSIVE STYLES */
+
 @media (max-width: 1024px) {
   .card {
     width: 48%;
@@ -543,7 +543,7 @@ img.banner {
   }
 }
 
-/* موبایل: خیلی جمع‌وجور */
+
 @media (max-width: 480px) {
   .navbar {
     padding: 0.3rem 0.8rem;
@@ -569,7 +569,7 @@ img.banner {
 }
 
 
-/* مخفی کردن منو در حالت موبایل */
+
 .nav-links {
   display: flex;
   gap: 2rem;
@@ -581,14 +581,14 @@ img.banner {
     flex-direction: column;
     background-color: #1a2456;
     position: absolute;
-    top: 60px; /* بسته به ارتفاع navbar */
+    top: 60px; 
     left: 0;
     width: 100%;
     padding: 1rem;
     z-index: 9;
   }
 
-  /* وقتی checkbox تیک خورده */
+
   #menu-toggle:checked + .menu-icon + .nav-links {
     display: flex;
   }
